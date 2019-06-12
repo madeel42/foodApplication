@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title>Bill table</title>
+  </head>
+  <style>
+  .back{
+background-image: url("img2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  .adis{
+      width: 50%;
+      /* background-color: red; */
+      margin-left:10px; 
+      margin-top: -20px;
+  }
+  
+  </style>
+
+  <body class="back">
+   <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 ">
+                  <h1 class="text-center text-warning">BiLL TABLE FOR FOOD APPLICATION</h1>
+                  <div class="container">
+                      <table class="table table-bordered table-hover table-responsive-sm" id="mytable">
+                          <tr class="text-center text-white">
+                              <th>SElect dishes</th>
+                              <th>Dishes name</th>
+                              <th>Price per kg</th>
+                              <th>Quantity in kilogram</th>
+                              <th>Total price per dishes</th>
+                              </th></th>
+                              <th>del row</th>
+                              <th>New price</th>
+
+                          </tr>
+                          <tr  class="text-center text-white">
+                              <td><input type="checkbox" class="orderdish" value="apple" data-price="150"></td>
+                              <td>APPLE</td>
+                              <td>150</td>
+                              <td><input type="text"></td>
+                              <td><input type="text"></td>
+                              <td><button class="btn-danger"  onclick="delrow(this)">DElete row</button></td>
+                              <td><button class="btn-danger"  onclick="update()">UPdate price</button></td>
+                          </tr>
+                          <tr  class="text-center text-white">
+                                <td><input type="checkbox" class="orderdish" value="mango" data-price="200"></td>
+                                <td>MANNGO</td>
+                                <td>200</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><button class="btn-danger"  onclick="delrow(this)">DElete row</button></td>
+                                <td><button class="btn-danger"  onclick="update()">UPdate price</button></td>
+                            </tr>
+                            <tr  class="text-center text-white">
+                                    <td><input type="checkbox" class="orderdish" data-price="100" value="nashpati"></td>
+                                    <td>NASHPATI</td>
+                                    <td>100</td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><button class="btn-danger"  onclick="delrow(this)">DElete row</button></td>
+                                    <td><button class="btn-danger"  onclick="update()">UPdate price</button></td>
+                                </tr>
+                                <tr  class="text-center text-white">
+                                        <td><input type="checkbox" class="orderdish" data-price="90" value="stowbery"></td>
+                                        <td>StOWBERY</td>
+                                        <td>90</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><button class="btn-danger"  onclick="delrow(this)">DElete row</button></td>
+                                        <td><button class="btn-danger" onclick="update()">UPdate price</button></td>
+                                       </table>
+                                       <div style="width : 40%">
+                      <button class="btn-primary" onclick="order()">Total bill!!</button>
+                      <button class="btn-primary" onclick="add()">ADD DISH</button>
+                      </div>
+                     <label class="text-white"><b>Before discount:</b></label> <input type="text" id="tbill"><br>
+                    <br>
+                     <div class="adis"> <label class="text-white"><b>After discount:</b></label> <input type="text" id="dbill"></div>
+                      </div>
+
+                  </div>
+                  </div>
+              <div class="col-md-1"></div>
+
+
+          </div>
+
+
+
+
+
+   </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="4th.js"></script>
+  </body>
+</html>
